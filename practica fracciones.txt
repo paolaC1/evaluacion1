@@ -1,0 +1,17 @@
+print("intoduce el numerador de la primera fracción ")
+in1 = int(input())
+print("intoduce el denominador de la primera fracción ")
+id1 = int(input())
+print("intoduce el numerador de la segunda fracción ")
+in2 = int(input())
+print("intoduce el denominador de la segunda fracción ")
+id2 = int(input())
+iSuma1 = in1 * id2 + in2 * id1
+iSuma2 = id1 * id2
+iResta1 = in1 * id2 - in2 * id1
+iResta2 = id1 * id2
+iMult1 = in1 * in2
+iMult2 = id1 * id2
+iDivision1 = in1 * id2
+iDivision2 = in2 * id1
+print("El resultado de la SUMA de tus fracciones es " + iSuma1 + "/" + iSuma2 + " ,el resultado de la RESTA de tus fracciones es " + iResta1 + "/" + iResta2 + " ,el resultado de la MULTIPLICACIÓN de tus fracciones es " + iMult1 + "/" + iMult2 + " ,y finalmente el resultado de la DIVISIÓN de tus fracciones es " + iDivision1 + "/" + iDivision2)

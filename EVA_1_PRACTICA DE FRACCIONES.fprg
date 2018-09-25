@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Invitado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-24 12:04:03 a. m."/>
+        <attribute name="created" value="SW52aXRhZG87UEFPTEE7MjAxOC0wOS0yMzswOTo1ODo0MSBwLiBtLjsyNjc5"/>
+        <attribute name="edited" value="SW52aXRhZG87UEFPTEE7MjAxOC0wOS0yNDsxMjowNDowMyBhLiBtLjsxOzI3NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;intoduce el numerador de la primera fracci&#243;n &quot;" newline="True"/>
+            <declare name="In1" type="Integer" array="False" size=""/>
+            <input variable="In1"/>
+            <output expression="&quot;intoduce el denominador de la primera fracci&#243;n &quot;" newline="True"/>
+            <declare name="Id1" type="Integer" array="False" size=""/>
+            <input variable="Id1"/>
+            <output expression="&quot;intoduce el numerador de la segunda fracci&#243;n &quot;" newline="True"/>
+            <declare name="In2" type="Integer" array="False" size=""/>
+            <input variable="In2"/>
+            <output expression="&quot;intoduce el denominador de la segunda fracci&#243;n &quot;" newline="True"/>
+            <declare name="Id2" type="Integer" array="False" size=""/>
+            <input variable="Id2"/>
+            <declare name="iSuma1" type="Integer" array="False" size=""/>
+            <assign variable="iSuma1" expression="(In1*Id2)+(In2*Id1)"/>
+            <declare name="iSuma2" type="Integer" array="False" size=""/>
+            <assign variable="iSuma2" expression="(Id1*Id2)"/>
+            <declare name="iResta1" type="Integer" array="False" size=""/>
+            <assign variable="iResta1" expression="(In1*Id2) - (In2*Id1)"/>
+            <declare name="iResta2" type="Integer" array="False" size=""/>
+            <assign variable="iResta2" expression="(Id1*Id2)"/>
+            <declare name="iMult1" type="Integer" array="False" size=""/>
+            <assign variable="iMult1" expression="In1*In2"/>
+            <declare name="iMult2" type="Integer" array="False" size=""/>
+            <assign variable="iMult2" expression="Id1*Id2"/>
+            <declare name="iDivision1" type="Integer" array="False" size=""/>
+            <assign variable="iDivision1" expression="In1 * Id2"/>
+            <declare name="iDivision2" type="Integer" array="False" size=""/>
+            <assign variable="iDivision2" expression="In2 * Id1"/>
+            <output expression="&quot;El resultado de la SUMA de tus fracciones es &quot; &amp; iSuma1 &amp; &quot;/&quot; &amp; iSuma2&#13;&#10;&amp;&#13;&#10;&quot; ,el resultado de la RESTA de tus fracciones es &quot; &amp; iResta1 &amp; &quot;/&quot; &amp; iResta2&#13;&#10;&amp;&#13;&#10;&quot; ,el resultado de la MULTIPLICACI&#211;N de tus fracciones es &quot; &amp; iMult1 &amp; &quot;/&quot; &amp; iMult2&#13;&#10;&amp;&#13;&#10;&quot; ,y finalmente el resultado de la DIVISI&#211;N de tus fracciones es &quot; &amp;&#13;&#10;iDivision1 &amp; &quot;/&quot; &amp; iDivision2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

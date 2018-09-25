@@ -1,0 +1,72 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    cout << "intoduce el numerador de la primera fracción " << endl;
+    int in1;
+    
+    cin >> in1;
+    cout << "intoduce el denominador de la primera fracción " << endl;
+    int id1;
+    
+    cin >> id1;
+    cout << "intoduce el numerador de la segunda fracción " << endl;
+    int in2;
+    
+    cin >> in2;
+    cout << "intoduce el denominador de la segunda fracción " << endl;
+    int id2;
+    
+    cin >> id2;
+    int iSuma1;
+    
+    iSuma1 = in1 * id2 + in2 * id1;
+    int iSuma2;
+    
+    iSuma2 = id1 * id2;
+    int iResta1;
+    
+    iResta1 = in1 * id2 - in2 * id1;
+    int iResta2;
+    
+    iResta2 = id1 * id2;
+    int iMult1;
+    
+    iMult1 = in1 * in2;
+    int iMult2;
+    
+    iMult2 = id1 * id2;
+    int iDivision1;
+    
+    iDivision1 = in1 * id2;
+    int iDivision2;
+    
+    iDivision2 = in2 * id1;
+    cout << "El resultado de la SUMA de tus fracciones es " << iSuma1 << "/" << iSuma2 << " ,el resultado de la RESTA de tus fracciones es " << iResta1 << "/" << iResta2 << " ,el resultado de la MULTIPLICACIÓN de tus fracciones es " << iMult1 << "/" << iMult2 << " ,y finalmente el resultado de la DIVISIÓN de tus fracciones es " << iDivision1 << "/" << iDivision2 << endl;
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}
